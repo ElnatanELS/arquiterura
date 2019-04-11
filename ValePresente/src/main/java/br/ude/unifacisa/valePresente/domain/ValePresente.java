@@ -7,45 +7,59 @@ import javax.persistence.Entity;
 @Entity
 public class ValePresente implements Serializable {
 
-	private static final long serialVersionUID = -7799369695818057571L;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+
+	
+
 	
 	@javax.persistence.Id
 	private String id;
-	private String nome;
-	
-	public ValePresente(String id, String nome) {
+	private String valor;
+	private String senha;
+	public ValePresente(String id, String valor, String senha) {
 		super();
 		this.id = id;
-		this.nome = nome;
+		this.valor = valor;
+		this.senha = senha;
 	}
-
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+	
 	public String getId() {
 		return id;
 	}
-
 	public void setId(String id) {
 		this.id = id;
 	}
-
-	public String getNome() {
-		return nome;
+	public String getValor() {
+		return valor;
 	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setValor(String valor) {
+		this.valor = valor;
 	}
-
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	} 
+	public String getSenha() {
+		return senha;
+	}
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
 	
 	
 	
-	
-	
-	
-	
-	
-	
-
 }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
