@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: cliente-ms
+  cloud:
+    config:
+      uri: http://localhost:9080
